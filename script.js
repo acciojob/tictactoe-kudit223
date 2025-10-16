@@ -24,7 +24,7 @@ let winConditions = [
 ];
 
 let options = ["", "", "", "", "", "", "", "", "",];
-let currentPlayer="X";
+let currentPlayer="x";
 
 submitbtn.addEventListener('click', () => {
 
@@ -71,7 +71,7 @@ function updateCell(cell,index){
 }
 
 function changePlayer(){
-    currentPlayer=currentPlayer=="X"?"O":"X";
+    currentPlayer=currentPlayer=="x"?"o":"x";
 }
 
 function checkWinner(){
@@ -94,7 +94,7 @@ function checkWinner(){
     }
 
     if(roundWin){
-        let winnerName=(currentPlayer=="X")?player1.value:player2.value;
+        let winnerName=(currentPlayer=="x")?player1.value:player2.value;
         message.textContent=`${winnerName} congratulations you won!`;
         isGameRunning=false;
     }
