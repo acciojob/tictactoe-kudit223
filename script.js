@@ -3,8 +3,8 @@
 let submitbtn = document.querySelector('#submit');
 let board = document.querySelector('#crossGrid');
 
-let player1 = document.querySelector('#player-1');
-let player2 = document.querySelector('#player-2');
+let player1 = document.querySelector('#player1');
+let player2 = document.querySelector('#player2');
 
 let message = document.querySelector('.message');
 
