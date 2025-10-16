@@ -67,11 +67,15 @@ function updateCell(cell,index){
         options[index]=currentPlayer;
     cell.textContent=currentPlayer;
     }
-    
+     
 }
 
 function changePlayer(){
     currentPlayer=currentPlayer=="x"?"o":"x";
+	let currentPlayerName;
+	currentPlayerName= (currentPlayer=="x")?player1.value:player2.value;
+	message.textContent=`${currentPlayerName}, you're up`;
+	
 }
 
 function checkWinner(){
