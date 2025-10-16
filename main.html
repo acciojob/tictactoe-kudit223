@@ -8,7 +8,58 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+    <style>
+        body{
+            background-color: black;
+        }
+        #crossGrid{
+            display: none;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,80px);
+            margin-top: 10px;
+            border: 2px solid black;
+        }
+        .cell{
+            background-color: rgb(143, 86, 197);
+            border: 1px solid black;
+            font-size: 60px;
+            cursor: pointer;
+        }
+        .container{
+            width: 250px;
+            margin: auto;
+            border:1px solid red;
+            padding:20px 40px;
+            font-family:"Permanent Marker",cursive;
+            text-align: center;
+            background-color: white;
+        }
+    </style>
+    <div class="container">
+        <h1 >Tic Tac Toe</h1>
+        <div class="message" style="display: none;"></div>
+        <form >
+            <label for="player-1">Player 1</label>
+            <input type="text" name="" id="player-1" placeholder="enter name" required>
+            <label for="player-2">Player 2</label>
+            <input type="text" name="" id="player-2" placeholder="enter name" required>
+            <button type="button" id="submit">submit</button>
+        </form>
+        <div id="crossGrid">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+        </div>
+    </div>
     <script type="text/javascript" src="./script.js">
+</script>
+<!-- <script type="text/javascript" src="./accio.js"> -->
 </script>
 
 </body>
